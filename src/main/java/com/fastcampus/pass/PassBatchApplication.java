@@ -14,7 +14,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-@EnableBatchProcessing
 @SpringBootApplication
 public class PassBatchApplication {
 
@@ -27,7 +26,8 @@ public class PassBatchApplication {
 		this.stepBuilderFactory = stepBuilderFactory;
 	}
 
-//	@Bean
+
+	//	@Bean
 //	public Step passStep() {
 //		return this.stepBuilderFactory.get("passStep")
 //				.tasklet(new Tasklet() {

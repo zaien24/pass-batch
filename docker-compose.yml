@@ -9,8 +9,8 @@ services:
       - ./db/initdb.d:/docker-entrypoint-initdb.d
     ports:
       - "3306:3306"
-    environment:
-      - MYSQL_DATABASE=pass_local 
+    environment:                                  # 환경 변수
+      - MYSQL_DATABASE=pass_local
       - MYSQL_USER=pass_local_user
       - MYSQL_PASSWORD=passlocal123
       - MYSQL_ROOT_PASSWORD=passlocal123
