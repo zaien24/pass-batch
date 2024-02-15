@@ -1,7 +1,7 @@
-# 백그라운드 실행, 강제 재생성
+# -d: 백그라운드 실행, --force-recreate: 강제 재생성
 db-up:
-    dokcer-compose up -d --force-recreate
+	docker-compose up -d --build --force-recreate
 
-# volume 삭제
+# -v: volume 삭제
 db-down:
-    docker-compose down -v
+	docker-compose down -v
